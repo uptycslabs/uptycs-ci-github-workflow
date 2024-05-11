@@ -1,10 +1,10 @@
 # uptycs-ci-github-workflow
 An example of how to run an Uptycs image scan inside a GitHub Workflow. 
 
-# setup
+# Setup
 1. Get Uptycs Tenant Values: Uptycs Secret, Uptycs Cert, TLS Hostname
    - Login to your Uptycs tenant and go to 'Integrations and Downloads'
-   ![image](https://github.com/uptycslabs/uptycs-ci-github-workflow/assets/49769928/e264b6d8-9c1b-4af4-a835-3911e7e9aa1f)
+     ![image](https://github.com/uptycslabs/uptycs-ci-github-workflow/assets/49769928/e264b6d8-9c1b-4af4-a835-3911e7e9aa1f)
    - Copy the values for Uptycs Secret, Uptycs Cert, TLS Hostname and save them
      ![image](https://github.com/uptycslabs/uptycs-ci-github-workflow/assets/49769928/511641d8-b03b-4ac1-9f7b-1b6929bb1381)
 2. Create an Uptycs API key
