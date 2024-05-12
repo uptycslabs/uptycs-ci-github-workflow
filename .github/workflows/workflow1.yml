@@ -1,5 +1,5 @@
 # This workflow build a container then scans it with Uptycs for vulnerabilities, secrets, and malware  
-name: CI
+name: BUILD_AND_SCAN
 
 # Controls when the workflow will run
 on:
