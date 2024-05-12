@@ -1,4 +1,4 @@
-name: build
+name: build-scan
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
       - name: Build an Image
         id: image_build
         run: |
-          docker build -t alpine:latest --iidfile=image_id.out .
+          docker build -t alpine:3.19.1 --iidfile=image_id.out .
           echo ::set-output name=image_id::$(cat image_id.out)
 
       - name: Run Uptycs Vulnerability Scanner
