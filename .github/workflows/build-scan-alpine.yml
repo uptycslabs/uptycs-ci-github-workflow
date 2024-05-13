@@ -18,8 +18,8 @@ jobs:
       - name: Build an Image
         id: image_build
         run: |
-          docker build -t alpine:3.19.1 --iidfile=image_id.out .
-          echo ::set-output name=image_id::$(cat image_id.out)
+          docker build --no-cache --file tests/alpine/Dockerfile --tag alpine:local --iidfile=image_id.out .
+          echo ::set-output name=image_id::$(cat image_id.out) >> $GITHUB_OUTPUT
 
       - name: Run Uptycs Vulnerability Scanner
         uses: uptycslabs/uptycs-ci-github-workflow@main
