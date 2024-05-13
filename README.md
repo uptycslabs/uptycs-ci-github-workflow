@@ -2,7 +2,7 @@
 An example of how to run an Uptycs image scan inside a GitHub Workflow. 
 
 # Setup
-1. Get Uptycs Tenant Values: Uptycs Secret, Uptycs Cert, TLS Hostname
+1. Get Uptycs Tenant Values: Uptycs Secret & TLS Hostname
    - Login to your Uptycs tenant and go to 'Integrations and Downloads'
      
      ![image](https://github.com/uptycslabs/uptycs-ci-github-workflow/assets/49769928/e264b6d8-9c1b-4af4-a835-3911e7e9aa1f)
@@ -20,4 +20,6 @@ An example of how to run an Uptycs image scan inside a GitHub Workflow.
    - UPTYCS_API_KEY (Value from the API key file)
    - UPTYCS_API_SECRET (Value from the API key file)
    - UPTYCS_CUSTOMER_ID (Value from the API key file)
-
+4. Run the Workflow
+   
+   There is a workflow that can be run for testing, it is located at: .github/workflows/build-scan-repo-dockerfile.yml 
