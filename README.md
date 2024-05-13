@@ -13,7 +13,8 @@ An example of how to run an Uptycs image scan inside a GitHub Workflow.
    - Then go to 'User API key' and click 'CREATE', then 'Download' the API key file
      ![image](https://github.com/uptycslabs/uptycs-ci-github-workflow/assets/49769928/3211594a-7c65-4736-b135-7b6024b69c84)
 3. Create the GitHub Action Repository Secrets
-   Create the following secrets
+   
+   Go to the GitHub Repository 'Settings' - 'Secrets and variables' - 'Actions' then click 'New repository secret' then add 
    - UPTYCS_CI_HOSTNAME (Value from the Integrations and Downloads screen)
    - UPTYCS_CI_SECRET (Value from the Integrations and Downloads screen)
    - UPTYCS_API_KEY (Value from the API key file)
